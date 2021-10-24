@@ -1,82 +1,47 @@
 <!--
-    此网页主要是写自己博客的主界面，也就是首页
-    首页的构图，简单的画到了预备文件里
-    如果有什么思考还会放在里面的，
-    未来考虑把预备文件单独成一个文件夹，放进blog里面，上传到github
-    期待那一天的到来
+    目前就在这个文件夹里写自己的博客
+    注意要想好页面之间的逻辑关系
+    页面内的元素位置，风格
+    再开始写
+
+    先写个提纲吧，主要是写一个偏向于大图，音乐的，二次元向的网站（单纯想写）
+    涉及到的图片都会上传到github图床，满了再换别的
+
+    手写构思的话
+    首页只有一张大的图片，最下面居中有几个联系方式
+    中间放自己的头像和名称，点击就可以进入博客首页
+
+    博客首页详情参见预备文件
 -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Aipraの小破站</title>
-        <link rel = "shortcut icon" href="./../style/images/favicon.ico" >
-        <link rel = "stylesheet" href = "./../style/css/homePage.css">
-    </head>
+        <link rel = "shortcut icon" href="./style/images/favicon.ico" >
+        <link rel = "stylesheet" href = "style/css/start.css" screen>
+    </head> 
     <body>
-        <div id = "body">
+        <div id = "startPage">
             <header>
+                <div id = "name">
+                    <p>Aipraの小破站</p>
+                </div>
                 <nav>
                     <ul>
-                        <li><a href="./../index.html">主页</a></li>
+                        <li><a href="./home/index.html">主页</a></li>
+                        <!-- <li><a href="#news">新闻</a></li>
+                        <li><a href="#contact">联系</a></li>
+                        <li><a href="#about">关于</a></li> -->
                     </ul>
                 </nav>
             </header>
-            <div id = "main">
-                <aside id = "sideBarLeft">
-                    <div class = "note" id = "myInformation">
-                        <p>Aipra</p>
-                    </div>
-                    <div class = "note" id = music>
-                        <p>music player</p>
-                    </div>
-                    <div class = "note" id = "other">
-                        <p>Waitting for adding.</p>
-                    </div>
-                </aside>
-                <section id = "postList">
-                    <article>
-                        <div class = "panel" id = "helloWorld">
-                            <a id = "img" href = "./../texture/2021.10/Hello_world/Hello_World.html">
-                                <img src = "./../style/images/Hello_World.jpg" alt = "pic">
-                            </a>
-                            
-                            <div id = "title">
-                                <a href = "./../texture/2021.10/Hello_world/Hello_World.html">
-                                    <h1>Hello_World</h1>
-                                    <p>第一次写博文难免有些疏忽之处，还望海涵，这次就简单的记录一下我的路程，然后说一下我的心理...</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "panel" id = "helloWorld">
-                            <a id = "img" href = "./../texture/2021.10/md常用语法/md常用语法.html">
-                                <img src = "./../style/images/md常用语法.jpg" alt = "pic">
-                            </a>
-                            
-                            <div id = "title">
-                                <a href = "./../texture/2021.10/md常用语法/md常用语法.html">
-                                    <h1>md常用语法</h1>
-                                    <p>md文件编写的一些符号：md中的基础符号只有四个，分别是 / * - + ` 注意写符号的时候要把他们放在行首，并且用...</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "panel" id = "2">
-
-                        </div>
-                    </article>
-                    <div id = "pageNumber">
-                        <P>页码</P>
-                    </div>
-                </section>
-                <aside id = "sideBarRight">
-                    <div class = "note" id = "notice">
-                        <p>紧急建设中...</p>
-                    </div>
-                </aside>
-            </div>
             <footer>
-                <p class = "footer">这是页尾</p>
+                <i class="fab fa-github"></i>
+                    <a target="github" href = "http://github.com/Aipra"><img src = './style/images/github.png' style = 'width: 40px;height: 40px;'></a>
+                    <a target="Bilibili" href = "https://space.bilibili.com/82454630"><img src = './style/images/bilibili.png' style = 'width: 40px;height: 40px;'></a>
             </footer>
         </div>
+        
     </body>
 </html>

@@ -1,0 +1,135 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:Hello_World</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<hr>
+<p>title: Hello World!
+date: 2021-09-01 16:46:31</p>
+<h2 id="tags-">tags: [首次,写博客,测试]</h2>
+<p>第一次写博文难免有些疏忽之处，还望海涵，这次就简单的记录一下我的路程，然后说一下我的心理感受。</p>
+<p>我是在B站看视频学习的写这篇博文，链接在下方。我现在还没有学会插入视频，所以只贴了链接，有点简陋就是了。</p>
+<pre><code>https://www.bilibili.com/video/BV1Eg41157tL
+</code></pre><p>我的实操过程和视频里的一模一样，甚至是主题也一样，后来才自己换的主题：</p>
+<ol>
+<li><p>安装node.js还有git，配置好git中本地和Github上的连接。（这一步中我因为自己之前用过Github，上传过一些代码，就显得特别简单）</p>
+</li>
+<li><p>利用npm安装好hexo</p>
+</li>
+<li><p>在一个新建的文件夹里写入以下三行代码，生成大体框架：</p>
+<pre><code class="lang-shell"> hexo init myBlog
+ cd myBlog
+ npm install
+</code></pre>
+<p> 这样便安装好了框架，这时候的主题是默认的主题。</p>
+</li>
+<li><p>接下来是在hexo的官网寻找合适的主题（主题链接在下方）
+ <a href="https://hexo.io/themes/">https://hexo.io/themes/</a>
+顺便说一下我的主题是flexblock，感兴趣可以在上述官网搜索一下</p>
+</li>
+<li><p>根据文档的说明，我便开始了自己的一系列配置，最终稍微满意了自己的配置。我做的配置大体有更换一些自己的标题，联系方式等。一些特色内容由于能力的有限，目前并没有开始配置，这其中有音频和图片。希望以后能够填坑。</p>
+</li>
+<li><p>接着，我按照视频的操作，在GitHub上创建了自己的库，库名就是自己的名字.github.io。编辑过myBlog文件夹下的_config.yml后利用</p>
+<pre><code class="lang-shell">hexo d
+</code></pre>
+<p>将本地下的文件上传到Github上,最后成功打开了自己的博客。
+这其中有过一个小差错：我一开始设置的是private，结果网站不能正常显示。还是改为了public才能正常显示。具体的原理并没搞清，不过大概是因为私有库生成的网页要购买的。</p>
+</li>
+<li><p>写博文的时候我是用的是视频里推荐的Typora，用起来还是不错的。开始写博文就是使用命令</p>
+<pre><code class="lang-shell">hexo new &#39;page name&#39;
+</code></pre>
+<p>进行编写。写完后利用下列命令可以查看自己编写的文章以及格式：</p>
+<pre><code class="lang-shell">hexo g # 生成草稿
+hexo s # 打开本地端口，可以进行访问
+</code></pre>
+<p>确定无误后可以使用下列命令进行上传到GitHub上:</p>
+<pre><code class="lang-shell">hexo d
+</code></pre>
+</li>
+</ol>
+<p>以上就是我这次新建博客的具体内容。注意的就是在上传的时候要先在本地测试一下效果，以防出现重大失误。从开始到写这第一篇文章前后用了4个小时。总结下来虽然很成功，但是浪费时间的地方太多：纠结了好久自己的主题如何选择，心里却没有自己的看法。这一个事就用了我3小时左右，其他只是简单的配置自己的一些内容。</p>
+<p>以上。</p>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

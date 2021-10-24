@@ -1,0 +1,132 @@
+div#body{
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: normal;
+    width:                  100%;
+    height:                 100%;
+    background-image:       url(./../images/bg-image.png);
+    background-size:        cover;
+    background-attachment:  fixed;
+    background-repeat:      no-repeat;
+    background-position:    center;
+    position:               fixed;/*设置图像在流中的位置，fixed就是生成绝对位置的元素，不随图像变化*/
+    top: 0px;right: 0px;bottom: 0px;left: 0px;/*用绝对坐标的形式确定图像的位置*/
+    z-index:                -1;/*放在最底层，保证是背景*/
+
+    margin:                 0px;
+    padding:                0px;
+
+    display:                flex;
+    flex-direction:         column;
+    flex-wrap:              nowrap;
+    justify-content:        flex-start;
+    align-items:            center;
+    overflow:               auto;
+}
+header{
+    height:                 100%;
+    width:                  100%;
+    background-image:       url(./../images/head-image.webp);
+    background-size:        cover;
+    min-height:             140px;
+    max-height:             140px;
+    background-repeat:      no-repeat;
+    background-position:    center;
+    
+}
+header nav ul li{
+    display:                inline;
+    list-style-type:        none;
+    font-size:              150%;
+    margin-right:           20px;
+}
+header a{
+    text-decoration:        none;
+}
+header a:link{/*未访问的链接*/
+    color:#000000;
+}
+header a:visited{
+    color:#000000;
+}
+header a:hover{
+    color:#0645AD;
+}
+
+
+div#main{
+    width:                  80%;
+    display:                flex;
+    flex-direction:         row;
+    flex-wrap:              nowrap;
+    justify-content:        center;
+}
+div#main aside{
+    width:                  33%;
+    margin:                 10px;
+    padding:                6px;
+}
+
+
+
+
+
+
+div#main section#postList{
+    width:                  33%;
+    margin:                 10px;
+    padding:                6px;
+}
+div#main section#postList article{
+    width:                  100%;
+    display:                flex;
+    flex-direction:         column;
+    flex-wrap:              nowrap;
+    justify-content:        center;
+}
+article .panel{
+    width:                  100%;
+    background-color:     white;
+    border-radius:          15px;
+    margin-bottom:          20px;
+}
+article div.panel img{
+    width:                  100%;
+    border-radius:          15px 15px 0px 0px;
+}
+article div.panel div#title{
+    padding:                0px 10px 10px 10px;
+}
+
+article div.panel a{
+    text-decoration:        none;
+}
+article div.panel a:link{
+    color:                  #4c4c4c;
+}
+article div.panel a:visited{
+    color:                  #4c4c4c;
+}
+article div.panel a:hover{
+    color:                  #618EBA;
+}
+
+
+
+
+
+div#main .note{
+    background-color:     white;
+    margin:                 10px;
+    padding:                6px;
+    border-radius:          15px;
+}
+footer{
+    width:                  100%;
+    font-size:              90%;
+    color:                  #546568;
+    background-color:       #11162c;
+}
+footer .footer{
+    padding-left:                15px;
+}
