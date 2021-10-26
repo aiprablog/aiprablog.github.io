@@ -168,7 +168,7 @@ tags: [md, 常用语法]
         还有一种参数式的表现方式：
         ```md
         [Emilia]: http://www.aipra.xyz/Emilia.jpg
-        [Emilia]Emilia赛高的说！
+        ![Emilia]Emilia赛高的说！
         ```
         [Emilia]: http://www.aipra.xyz/Emilia.jpg
         ![Emilia]Emilia赛高的说！
